@@ -1,0 +1,24 @@
+# Ambiente virtuale
+venv/
+.env/
+.venv/
+
+# File di Python compilati
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build e distribuzione
+build/
+dist/
+*.egg-info/
+
+# File temporanei/di log
+*.log
+*.tmp
+*.bak
+
+# IDEs e editor
+.vscode/
+.idea/
+*.swp
