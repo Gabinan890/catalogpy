@@ -3,7 +3,7 @@
 # catalogpy
 
 [![PyPI version](https://img.shields.io/pypi/v/catalogpy)](https://pypi.org/project/catalogpy/)
-[![PyPI downloads](https://img.shields.io/pypi/dm/catalogpy)](https://pypi.org/project/catalogpy/)
+![Total downloads](https://img.shields.io/pypi/dt/catalogpy)
 [![License](https://img.shields.io/pypi/l/catalogpy)](https://github.com/Gabinan890/catalogpy/blob/main/LICENSE)
 
 Questa libreria è fatta per ordinare stringhe testi e liste in modo più veloce e diretto!
