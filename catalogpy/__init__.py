@@ -1,1 +1,1 @@
-from catalog import elencation, ordination
+from catalog import elencation, ordination, order_shortest, order_longer
