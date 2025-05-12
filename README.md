@@ -10,6 +10,6 @@ Questa libreria è fatta per ordinare stringhe testi e liste in modo più veloce
 Per ora ci sono due funzioni: ```elencation()``` che ti permette di elencare in ordine 
 alfabetico le varie parole che scriverai nell'input quando esegui il codice, 
 ```ordination()``` che ti permette di elencare in ordine alfabetico le parole che 
-scriverai nell' input in una lista numerata, order_longer() che ti permette di ordinare
-le parole dalla più lunga alla più corta e order_shortest() che ti permette di ordinare
+scriverai nell' input in una lista numerata, git push origin ```order_longer()``` che ti permette di ordinare
+le parole dalla più lunga alla più corta e ```order_shortest()``` che ti permette di ordinare
 le parole dalla più corta alla più lunga.
