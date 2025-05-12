@@ -6,6 +6,7 @@
 [![PyPI downloads per week](https://img.shields.io/pypi/dw/catalogpy)](https://pypi.org/project/catalogpy/)
 [![Downloads per day](https://pepy.tech/badge/catalogpy/day)](https://pepy.tech/project/catalogpy)
 [![PyPI - Downloads](https://img.shields.io/pypi/dt/catalogpy)](https://pypi.org/project/catalogpy/)
+[![PyPI downloads](https://img.shields.io/pypi/dw/catalogpy)](https://pypi.org/project/catalogpy/)
 ![PyPI - Downloads](https://img.shields.io/pypi/dt/catalogpy)
 [![License](https://img.shields.io/pypi/l/catalogpy)](https://github.com/Gabinan890/catalogpy/blob/main/LICENSE)
 
