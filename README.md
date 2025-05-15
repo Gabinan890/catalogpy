@@ -6,10 +6,21 @@
 [![Total Downloads](https://static.pepy.tech/badge/catalogpy)](https://pepy.tech/project/catalogpy)
 [![License](https://img.shields.io/pypi/l/catalogpy)](https://pypi.org/project/catalogpy/)
 
-Questa libreria è fatta per ordinare stringhe testi e liste in modo più veloce e diretto!
-Per ora ci sono due funzioni: ```elencation()``` che ti permette di elencare in ordine 
-alfabetico le varie parole che scriverai nell'input quando esegui il codice, 
-```ordination()``` che ti permette di elencare in ordine alfabetico le parole che 
-scriverai nell' input in una lista numerata, git push origin ```order_longer()``` che ti permette di ordinare
-le parole dalla più lunga alla più corta e ```order_shortest()``` che ti permette di ordinare
-le parole dalla più corta alla più lunga.
+catalogpy è una libreria che ti permette di ordinare le tue stringhe, e mantenere il tuo codice più pulito!
+
+## Installazione
+Come installarlo? Semplice basta usare **pip**!
+```bash
+pip install catalogpy
+```
+## Funzioni
+
+In questa versione (v1.2) puoi:     
+ordinare le parole in ordine alfabetico in un'elenco ```elencation()```  
+ordinare le parole in ordine alfabetico in un'elenco numerato ```ordination()```  
+ordinare le parole dalla più lunga alla più corta ```order_longer()```   
+ordinare le parole dalla più corta alla più lunga ```order_shortest()```
+filtrare le parole in base al numero delle lettere ```remove_words(min_len, max_len)```
+
+I parametri ```min_len``` e ```max_len``` filtrano le parole in base al numero di lettere scelto dall'utente, e sono opzionali 
+in tutti i comandi tranne ```remove_words()``` il quale cancellerà tutte le parole in mancanza di parametri.
