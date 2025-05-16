@@ -20,7 +20,7 @@ ordinare le parole in ordine alfabetico in un'elenco ```elencation()```
 ordinare le parole in ordine alfabetico in un'elenco numerato ```ordination()```  
 ordinare le parole dalla più lunga alla più corta ```order_longer()```   
 ordinare le parole dalla più corta alla più lunga ```order_shortest()```
-filtrare le parole in base al numero delle lettere ```remove_words(min_len, max_len)```
+filtrare le parole in base al numero delle lettere ```remove_words(words, min_len, max_len)```
 
-I parametri ```min_len``` e ```max_len``` filtrano le parole in base al numero di lettere scelto dall'utente, e sono opzionali 
+I parametri ```min_len```, ```max_len``` e ```words``` filtrano le parole in base al numero di lettere scelto dall'utente, e sono opzionali 
 in tutti i comandi tranne ```remove_words()``` il quale cancellerà tutte le parole in mancanza di parametri.
