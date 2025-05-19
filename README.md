@@ -3,7 +3,7 @@
 # catalogpy
 
 [![PyPI Version](https://img.shields.io/pypi/v/catalogpy)](https://pypi.org/project/catalogpy/)
-[![Downloads](https://img.shields.io/badge/downloads-1.3k-blue)](https://pepy.tech/project/catalogpy)
+[![Total Downloads](https://static.pepy.tech/badge/catalogpy)](https://pepy.tech/project/catalogpy)
 [![License](https://img.shields.io/pypi/l/catalogpy)](https://pypi.org/project/catalogpy/)
 
 catalogpy è una libreria che ti permette di ordinare le tue stringhe, e mantenere il tuo codice più pulito!
