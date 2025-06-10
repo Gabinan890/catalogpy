@@ -39,3 +39,30 @@ def remove_words(words=None, min_len=0, max_len=float('inf')):
         return ""
     inlista = [w for w in words if min_len <= len(w) <= max_len]
     return "\n".join(inlista)
+
+def unique_words(words=None, min_len=0, max_len=float('inf')):
+    if words is None:
+        inp = input("Dammi delle parole e ti restituisco solo quelle uniche\n")
+        words = inp.split()
+    # Mantieni solo parole nel range di lunghezza, poi rimuovi duplicati mantenendo l'ordine
+    seen = set()
+    unique = []
+    for w in words:
+        if min_len <= len(w) <= max_len and w not in seen:
+            seen.add(w)
+            unique.append(w)
+    unique.sort()
+    return "\n".join(unique)
+
+def clean_words(words=None, min_len=0, max_len=float('inf')):
+    if words is None:
+        inp = input("Dammi delle parole e le ripulisco da caratteri speciali e numeri\n")
+        words = inp.split()
+    cleaned = []
+    for w in words:
+        # Mantieni solo lettere dalla a alla z (sia minuscole che maiuscole)
+        new_w = ''.join(c for c in w if ('a' <= c <= 'z') or ('A' <= c <= 'Z'))
+        if min_len <= len(new_w) <= max_len and new_w:
+            cleaned.append(new_w)
+    cleaned.sort()
+    return "\n".join(cleaned)
