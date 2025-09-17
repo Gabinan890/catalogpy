@@ -1,11 +1,5 @@
 # catalogpy :)
 
-[![PyPI Version](https://img.shields.io/pypi/v/catalogpy)](https://pypi.org/project/catalogpy/)
-[![Total Downloads](https://static.pepy.tech/badge/catalogpy)](https://pepy.tech/project/catalogpy)
-[![License](https://img.shields.io/pypi/l/catalogpy)](https://pypi.org/project/catalogpy/)
-
-catalogpy è una libreria che ti permette di ordinare le tue stringhe, e mantenere il tuo codice più pulito!
-
 ## Installazione
 Come installarlo? Semplice basta usare **pip**!
 ```bash
@@ -73,4 +67,5 @@ print(result)
 # gatto
 # topo
 ```
+
 
