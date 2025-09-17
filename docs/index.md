@@ -19,3 +19,4 @@ Semplifica i tuoi flussi di lavoro, risparmia tempo e rendi la gestione del cata
 
 ## Per Iniziare
 Se vuoi iniziare subito, dai un'occhiata alla nostra [Guida Rapida](guida_rapida.md).
+
