@@ -1,0 +1,6 @@
+site_name: CatalogPy Documentation
+site_url: https://gabinan890.github.io/catalogpy/
+nav:
+  - Home: index.md
+  - Guida Rapida: guida_rapida.md
+docs_dir: docs
