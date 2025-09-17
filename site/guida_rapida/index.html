@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Guida rapida - My Docs</title>
+        <title>catalogpy :) - My Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -35,10 +35,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href=".." class="nav-link">Home</a>
+                                <a href=".." class="nav-link">Benvenuto in CatalogPy</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Guida rapida</a>
+                                <a href="./" class="nav-link active" aria-current="page">catalogpy :)</a>
                             </li>
                         </ul>
 
@@ -75,12 +75,160 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#catalogpy" class="nav-link">catalogpy :)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#installazione" class="nav-link">Installazione</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#output" class="nav-link">Output:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#kiwi" class="nav-link">kiwi</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#mela" class="nav-link">mela</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#output_1" class="nav-link">Output:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#elephant" class="nav-link">elephant</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#bird" class="nav-link">bird</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#cat" class="nav-link">cat</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#dog" class="nav-link">dog</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#output_2" class="nav-link">Output:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#cat_1" class="nav-link">cat</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#dog_1" class="nav-link">dog</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#bird_1" class="nav-link">bird</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#elephant_1" class="nav-link">elephant</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#output_3" class="nav-link">Output:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#cane" class="nav-link">cane</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#gatto" class="nav-link">gatto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#topo" class="nav-link">topo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-</div>
+<h1 id="catalogpy">catalogpy :)</h1>
+<h2 id="installazione">Installazione</h2>
+<p>Come installarlo? Semplice basta usare <strong>pip</strong>!</p>
+<pre><code class="language-bash">pip install catalogpy
+</code></pre>
+<p>Funzionalità e Utilizzo
+Ogni funzione è progettata per eseguire un'operazione specifica. Puoi importare e usare solo le funzioni di cui hai bisogno.</p>
+<p><code>elencation(words=None, min_len=0, max_len=inf)</code>
+Ordina le parole in ordine alfabetico e le restituisce in una stringa, filtrate per lunghezza.</p>
+<p>```from catalogpy.catalog import elencation</p>
+<p>words = ["mela", "kiwi", "banana", "arancia"]
+result = elencation(words, min_len=4, max_len=6)
+print(result)</p>
+<h1 id="output">Output:</h1>
+<h1 id="kiwi">kiwi</h1>
+<h1 id="mela">mela</h1>
+<pre><code>
+```order_longer(words=None, min_len=0, max_len=inf)
+Ordina le parole dalla più lunga alla più corta.
+</code></pre>
+<p>```from catalogpy.catalog import order_longer</p>
+<p>words = ["cat", "elephant", "dog", "bird"]
+result = order_longer(words)
+print(result)</p>
+<h1 id="output_1">Output:</h1>
+<h1 id="elephant">elephant</h1>
+<h1 id="bird">bird</h1>
+<h1 id="cat">cat</h1>
+<h1 id="dog">dog</h1>
+<pre><code>
+```order_shortest(words=None, min_len=0, max_len=inf)
+Ordina le parole dalla più corta alla più lunga.
+</code></pre>
+<p>```from catalogpy.catalog import order_shortest</p>
+<p>words = ["cat", "elephant", "dog", "bird"]
+result = order_shortest(words)
+print(result)</p>
+<h1 id="output_2">Output:</h1>
+<h1 id="cat_1">cat</h1>
+<h1 id="dog_1">dog</h1>
+<h1 id="bird_1">bird</h1>
+<h1 id="elephant_1">elephant</h1>
+<pre><code>
+```unique_words(words=None, min_len=0, max_len=inf)
+Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengono filtrate e poi ordinate.
+</code></pre>
+<p>```from catalogpy.catalog import unique_words</p>
+<p>words = ["gatto", "cane", "gatto", "topo", "cane"]
+result = unique_words(words)
+print(result)</p>
+<h1 id="output_3">Output:</h1>
+<h1 id="cane">cane</h1>
+<h1 id="gatto">gatto</h1>
+<h1 id="topo">topo</h1>
+<p>```</p></div>
             </div>
         </div>
 
