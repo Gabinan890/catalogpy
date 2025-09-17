@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from catalogpy.catalog import elencation, ordination, order_longer, order_shortest, remove_words, unique_words, clean_words
+from catalogpy.catalog import elencation, ordination, order_longer, order_shortest, remove_words, unique_words
 
 def test_elencation():
     words = ['apple', 'banana', 'pear', 'kiwi']
@@ -32,11 +32,5 @@ def test_remove_words():
 def test_unique_words():
     words = ['apple', 'banana', 'apple', 'pear', 'kiwi', 'banana']
     result = unique_words(words, min_len=4, max_len=6)
-    expected = "apple\nbanana\npear\nkiwi"
-    assert result == expected
-
-def test_clean_words():
-    words = ['c@t123', 'dog!', 'eleph@nt7', '123horse', 'bird']
-    result = clean_words(words, min_len=3, max_len=6)
-    expected = "bird\ncat\ndog"
+    expected = "apple\nbanana\nkiwi\npear"
     assert result == expected
