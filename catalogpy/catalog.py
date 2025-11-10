@@ -11,7 +11,6 @@ def elencation(words=None, min_len=0, max_len=float('inf')):
     lista.sort()
     return "\n".join(lista)
 
-
 def ordination(words=None, min_len=0, max_len=float('inf')):
     """
     Ordina e restituisce una lista di parole in ordine alfabetico,
@@ -26,7 +25,6 @@ def ordination(words=None, min_len=0, max_len=float('inf')):
     risultato = [f"{i}. {parola}" for i, parola in enumerate(parole, start=1)]
     return "\n".join(risultato)
 
-
 def order_longer(words=None, min_len=0, max_len=float('inf')):
     """
     Ordina e restituisce una lista di parole dalla più lunga alla più corta.
@@ -38,7 +36,6 @@ def order_longer(words=None, min_len=0, max_len=float('inf')):
     inlista = [w for w in words if min_len <= len(w) <= max_len]
     inlista.sort(key=len, reverse=True)
     return "\n".join(inlista)
-
 
 def order_shortest(words=None, min_len=0, max_len=float('inf')):
     """
@@ -52,7 +49,6 @@ def order_shortest(words=None, min_len=0, max_len=float('inf')):
     inlista.sort(key=len)
     return "\n".join(inlista)
 
-
 def remove_words(words=None, min_len=0, max_len=float('inf')):
     """
     Rimuove le parole che non rispettano i parametri di lunghezza.
@@ -63,7 +59,6 @@ def remove_words(words=None, min_len=0, max_len=float('inf')):
 
     inlista = [w for w in words if min_len <= len(w) <= max_len]
     return "\n".join(inlista)
-
 
 def unique_words(words=None, min_len=0, max_len=float('inf')):
     """
@@ -81,5 +76,3 @@ def unique_words(words=None, min_len=0, max_len=float('inf')):
     filtered_and_sorted.sort()
 
     return "\n".join(filtered_and_sorted)
-
-
