@@ -1,8 +1,7 @@
 def elencation(words=None, min_len=0, max_len=float('inf')):
-    """
-    Ordina e restituisce una lista di parole in ordine alfabetico,
-    filtrando per lunghezza.
-    """
+    
+    #Ordina e restituisce una lista di parole in ordine alfabetico, filtrando per lunghezza.
+
     if words is None:
         inp = input("Dammi delle parole e te le metto in ordine alfabetico\n")
         words = inp.split()
@@ -12,10 +11,9 @@ def elencation(words=None, min_len=0, max_len=float('inf')):
     return "\n".join(lista)
 
 def ordination(words=None, min_len=0, max_len=float('inf')):
-    """
-    Ordina e restituisce una lista di parole in ordine alfabetico,
-    numerandole.
-    """
+    
+    #Ordina e restituisce una lista di parole in ordine alfabetico, numerandole.
+    
     if words is None:
         ind = input("Dammi delle parole e te le metto in ordine alfabetico e numerate:\n")
         words = ind.split()
@@ -26,9 +24,9 @@ def ordination(words=None, min_len=0, max_len=float('inf')):
     return "\n".join(risultato)
 
 def order_longer(words=None, min_len=0, max_len=float('inf')):
-    """
-    Ordina e restituisce una lista di parole dalla più lunga alla più corta.
-    """
+    
+    #Ordina e restituisce una lista di parole dalla più lunga alla più corta.
+    
     if words is None:
         inp = input("Dammi delle parole e te le metto in ordine dalla più lunga alla più corta\n")
         words = inp.split()
@@ -38,9 +36,9 @@ def order_longer(words=None, min_len=0, max_len=float('inf')):
     return "\n".join(inlista)
 
 def order_shortest(words=None, min_len=0, max_len=float('inf')):
-    """
-    Ordina e restituisce una lista di parole dalla più corta alla più lunga.
-    """
+    
+    # Ordina e restituisce una lista di parole dalla più corta alla più lunga.
+    
     if words is None:
         inp = input("Dammi delle parole e te la metto in ordine dalla più lunga alla più corta\n")
         words = inp.split()
@@ -50,9 +48,9 @@ def order_shortest(words=None, min_len=0, max_len=float('inf')):
     return "\n".join(inlista)
 
 def remove_words(words=None, min_len=0, max_len=float('inf')):
-    """
-    Rimuove le parole che non rispettano i parametri di lunghezza.
-    """
+    
+    # Rimuove le parole che non rispettano i parametri di lunghezza.
+
     if words is None:
         inp = input("Dammi delle parole e ti rimuovo quelle che non rispettano i parametri di lunghezza\n")
         words = inp.split()
@@ -61,9 +59,9 @@ def remove_words(words=None, min_len=0, max_len=float('inf')):
     return "\n".join(inlista)
 
 def unique_words(words=None, min_len=0, max_len=float('inf')):
-    """
-    Restituisce solo le parole uniche in ordine alfabetico.
-    """
+    
+    # Restituisce solo le parole uniche in ordine alfabetico.
+
     if words is None:
         inp = input("Dammi delle parole e ti restituisco solo quelle uniche\n")
         words = inp.split()
@@ -76,3 +74,7 @@ def unique_words(words=None, min_len=0, max_len=float('inf')):
     filtered_and_sorted.sort()
 
     return "\n".join(filtered_and_sorted)
+
+
+# Questo codice è scritto maggiormente con AI ma non per molto ancora. :)
+
