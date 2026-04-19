@@ -1,3 +1,5 @@
+#Copyright (C) 2026 Gabriele Ristori
+
 def elencation(words=None, min_len=0, max_len=float('inf')):
     
     #Ordina e restituisce una lista di parole in ordine alfabetico, filtrando per lunghezza.

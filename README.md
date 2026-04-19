@@ -74,3 +74,6 @@ print(result)
 # gatto
 # topo
 ```
+-----
+#Licenza
+Questo progetto è distribuito sotto licenza GNU GPL v3. Consulta file LICENSE per dettagli.
