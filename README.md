@@ -21,8 +21,7 @@ Ordina le parole in ordine alfabetico e le restituisce in una stringa, filtrate 
 ```from catalogpy.catalog import elencation
 
 words = ["mela", "kiwi", "banana", "arancia"]
-result = elencation(words, min_len=4, max_len=6)
-print(result)
+elencation(words, min=4, max=6)
 # Output:
 # kiwi
 # mela

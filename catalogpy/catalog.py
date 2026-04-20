@@ -1,16 +1,40 @@
 #Copyright (C) 2026 Gabriele Ristori
 
-def elencation(words=None, min_len=0, max_len=float('inf')):
-    
-    #Ordina e restituisce una lista di parole in ordine alfabetico, filtrando per lunghezza.
+#Funzione elencation() ordina in ordine alfabetico le stringhe e facoltativamente può filtrare anche per lunghezza le parole
 
-    if words is None:
-        inp = input("Dammi delle parole e te le metto in ordine alfabetico\n")
-        words = inp.split()
+def elencation(words=None, min=None, max=None):
+    if(words==None):
+        inp=input("Inserisci le parole/Insert the words ")
+        min=input("Inserisci il minimo/Insert the minimum")
+        max=input("Inserisci il massimo/Insert de maximum")
+    words=inp.replace(","," ").split()
+    List=[]
+    ì=0
+    if(min!=None and max!=None and min!="" and max!=""):
+        for w in words:
+            if(w>=min and w<=max):
+                List.append(w)
+                ì+=1
+        if(ì==0):
+            print("Errore non ci sono parole dentro List")
+            return "Errore non ci sono parole dentro List"
+        else:
+            elencation_list=sorted(List)
+            print(elencation_list)
+            return elencation_list
+    else:
+        for w in words:
+            List.append(w)
+            ì+=1
+        if(ì==0):
+            print("Errore non ci sono parole dentro List")
+            return "Errore non ci sono parole dentro List"
+        else:
+            elencation_list=sorted(List)
+            print(elencation_list)
+            return elencation_list
 
-    lista = [w for w in words if min_len <= len(w) <= max_len]
-    lista.sort()
-    return "\n".join(lista)
+#Prima funzione elencation() aggiornata e riscritta senza AI
 
 def ordination(words=None, min_len=0, max_len=float('inf')):
     
@@ -39,7 +63,7 @@ def order_longer(words=None, min_len=0, max_len=float('inf')):
 
 def order_shortest(words=None, min_len=0, max_len=float('inf')):
     
-    # Ordina e restituisce una lista di parole dalla più corta alla più lunga.
+    #Ordina e restituisce una lista di parole dalla più corta alla più lunga.
     
     if words is None:
         inp = input("Dammi delle parole e te la metto in ordine dalla più lunga alla più corta\n")

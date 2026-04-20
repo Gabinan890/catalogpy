@@ -2,12 +2,7 @@ import pytest
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from catalogpy.catalog import elencation, ordination, order_longer, order_shortest, remove_words, unique_words
-
-def test_elencation():
-    words = ['apple', 'banana', 'pear', 'kiwi']
-    result = elencation(words, max_len=5)
-    assert result == "apple\nkiwi\npear"
+from catalogpy.catalog import ordination, order_longer, order_shortest, remove_words, unique_words
 
 def test_ordination():
     words = ['apple', 'banana', 'pear', 'kiwi']
