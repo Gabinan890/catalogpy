@@ -66,8 +66,7 @@ Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengon
 ```from catalogpy.catalog import unique_words
 
 words = ["gatto", "cane", "gatto", "topo", "cane"]
-result = unique_words(words)
-print(result)
+unique_words(words)
 # Output:
 # cane
 # gatto

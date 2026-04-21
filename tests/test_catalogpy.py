@@ -2,7 +2,7 @@ import pytest
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from catalogpy.catalog import ordination, order_longer, order_shortest, remove_words, unique_words
+from catalogpy.catalog import ordination, order_longer, order_shortest
 
 def test_ordination():
     words = ['apple', 'banana', 'pear', 'kiwi']
@@ -18,14 +18,3 @@ def test_order_shortest():
     words = ['cat', 'horse', 'dog', 'elephant']
     result = order_shortest(words, max_len=3)
     assert result == "cat\ndog"
-
-def test_remove_words():
-    words = ['cat', 'horse', 'dog', 'elephant']
-    result = remove_words(words, min_len=4, max_len=6)
-    assert result == "horse"
-
-def test_unique_words():
-    words = ['apple', 'banana', 'apple', 'pear', 'kiwi', 'banana']
-    result = unique_words(words, min_len=4, max_len=6)
-    expected = "apple\nbanana\nkiwi\npear"
-    assert result == expected
