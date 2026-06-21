@@ -1,7 +1,7 @@
 #Copyright (C) 2026 Gabriele Ristori
 
 #La documentazione è un po pigra scusate cercherò di risolvere in futuro :)
-#I try to explain my code in english but I'm not so good and I'm so busy with school actualy I've got some summer recovery exame at school in summer so I've to study 
+#I try to explain my code in english but I'm not so good in english and I'm so busy with school actualy I've got some summer recovery exame at school in summer so I've to study
 
 #Funzione elencation() ordina in ordine alfabetico le stringhe e facoltativamente può filtrare anche per lunghezza le parole la uso anche come base per alcune delle altre funzioni
 #This function elencation() reorder some string in alphabetich order and actualy some of the other function are based on elencation()
@@ -89,7 +89,7 @@ def unique_words(ord=False, words=None, min=None, max=None, text=None):
         List=[]
         i=0
         for w in inp:
-            if((w in inp)==False):
+            if((w in List)==False):
                 List.append(w)
                 i+=1
         if(i==0):
@@ -106,7 +106,7 @@ def unique_words(ord=False, words=None, min=None, max=None, text=None):
                 max=input(text[2]+" ")
             words=inp.replace(","," "),split()
 
-        ì=0
+        i=0
         Lis=[]
         if(min!=None and max!=None and min!="" and max!=""):
             for w in words:
