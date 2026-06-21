@@ -41,7 +41,7 @@ print(ordination(4, words, min=4, max=6)
 
 -----
 
-```unique_words(words, min, max)```
+```unique_words(words, min, max, text)```
 Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengono filtrate e poi ordinate.
 
 ```from catalogpy.catalog import unique_words
