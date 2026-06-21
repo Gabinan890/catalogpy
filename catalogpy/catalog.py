@@ -4,35 +4,79 @@
 
 #Funzione elencation() ordina in ordine alfabetico le stringhe e facoltativamente può filtrare anche per lunghezza le parole
 
+def elencation(words=None, min=None, max=None, text=None):
+    if(words==None):
+        if(text==None or len(text)!=3):
+            inp=input("Inserisci le parole ")
+            min=input("Inserisci il minimo ")
+            max=input("Inserisci il massimo ")
+        else:
+            inp=input(text[0]+" ")
+            min=input(text[1]+" ")
+            max=input(text[2]+" ")
+        words=inp.replace(","," ").split()
+    List=[]
+    i=0
+    if((min!=None and min!="") or (max!="" and max!="")):
+        for w in words:
+            if(len(w)>=int(min) and len(w)<=int(max)):
+                List.append(w)
+                i+=1
+    else:
+        for w in words:
+            List.append(w)
+            i+=1
+    if(i==0):
+        print("Errore nessuna stringa in Lis")
+        return "Errore"
+    elencation_list=sorted(List)
+    return elencation_list
+
+#Prima funzione senza AI elencation() aggiornata e risscritta completamente bhe l'aggiornamento risale a qualche mese fa ma ho davvero poco tempo e sono pigro :)
+
+#Vecchia versione di elencation() per ora me la salvo qui
+
+"""
 def elencation(words=None, min=None, max=None):
     if(words==None):
         #Implementazione lingua inglese ancora in fase di test :)
-        inp=input("Inserisci le parole/Insert the words ")
-        min=input("Inserisci il minimo/Insert the minimum ")
-        max=input("Inserisci il massimo/Insert de maximum ")
+        #Mi sembrava brutto usare due lingue quindi ne uso solo una :) il mio inglese fa schifo lo so
+        inp=input("Insert the words ")
+        min=input("Insert the minimum ")
+        max=input("Insert the maximum ")
     words=inp.replace(","," ").split()
     List=[]
-    ì=0
+    i=0
     if(min!=None and max!=None and min!="" and max!=""):
         for w in words:
             if(len(w)>=int(min) and len(w)<=int(max)):
                 List.append(w)
-                ì+=1
+                i+=1
     else:
         for w in words:
             List.append(w)
-            ì+=1
-    if(ì==0):
-        print("Errore nessuna stringa in Lis")
+            i+=1
+    if(i==0):
         return "Errore"
     elencation_list=sorted(List)
-    print(elencation_list)
     return elencation_list
+"""
+#Prima funzione elencation() aggiornata e riscritta senza AI (vecchia!)
 
-#Prima funzione elencation() aggiornata e riscritta senza AI
+#ordination() serve ad ordinare in ordine alfabetico le stringhe numerandole
 
-def ordination(words=None, min_len=0, max_len=float('inf')):
-    
+def ordination(start=1, words=None, min=None, max=None, text=None):
+    inp=elencation(words, min, max, text)
+    List=[]
+    for numero, parola in enumerate(inp, start=start):
+        List.append(f"{numero}. {parola}")
+    return List
+    #finalmente terza funzione fatta senza AI ordination() :)
+
+
+#vecchia ordination() fatta con l'AI:
+
+"""
     #Ordina e restituisce una lista di parole in ordine alfabetico, numerandole.
     
     if words is None:
@@ -43,6 +87,7 @@ def ordination(words=None, min_len=0, max_len=float('inf')):
     parole.sort()
     risultato = [f"{i}. {parola}" for i, parola in enumerate(parole, start=1)]
     return "\n".join(risultato)
+"""
 
 def order_longer(words=None, min_len=0, max_len=float('inf')):
     
