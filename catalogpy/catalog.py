@@ -104,7 +104,7 @@ def unique_words(ord=False, words=None, min=None, max=None, text=None):
                 inp=input(text[0]+" ")
                 min=input(text[1]+" ")
                 max=input(text[2]+" ")
-            words=inp.replace(","," "),split()
+            words=inp.replace(","," ").split()
 
         i=0
         Lis=[]
