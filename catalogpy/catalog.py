@@ -53,6 +53,7 @@ def ordination(start=1, words=None, min=None, max=None, text=None):
     #finalmente terza funzione fatta senza AI ordination() un'altro passo verso il grande aggiornamento!(21/06/2025):)
     #finally the third function whitout AI another step to the big update 2.0 is coming!(21/06/2025) :)
 
+"""
 #Codice con le ore contate
 #Some code with the counted hours.
 def order_longer(words=None, min_len=0, max_len=float('inf')):
@@ -78,6 +79,7 @@ def order_shortest(words=None, min_len=0, max_len=float('inf')):
     inlista = [w for w in words if min_len <= len(w) <= max_len]
     inlista.sort(key=len)
     return "\n".join(inlista)
+"""
 
 #unique_words() permette di creare un'elenco in ordine alfabetico o meno a scelta dell'utente eliminando tutte le parole che si ripetono
 #uique_words() you can create a list in alphabetich order or not erasing al the multiple words
