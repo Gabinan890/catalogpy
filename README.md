@@ -7,16 +7,20 @@
 
 catalogpy è una libreria che ti permette di ordinare le tue stringhe, e mantenere il tuo codice più pulito!
 
-## Installazione
+## Installazione/Install
 Come installarlo? Semplice basta usare **pip**!
+How to dowload it? It's simple just use **pip**!
 ```bash
 pip install catalogpy
 ```
 Funzionalità e Utilizzo
 Ogni funzione è progettata per eseguire un'operazione specifica. Puoi importare e usare solo le funzioni di cui hai bisogno.
+Funtionalities and utility
+Each function is designed to execute an a specific operation. You can import and use only the function that you need.
 
 ```elencation(words, min, max, text)```
 Ordina le parole in ordine alfabetico e le restituisce in una stringa, filtrate per lunghezza.
+Order the word in alphabetical order and return them into a string, you can also filter the word by lenght.
 
 ```from catalogpy.catalog import elencation
 
@@ -30,6 +34,7 @@ elencation(words, min=4, max=6)
 
 ```ordination(start, words, min, max, text)```
 Restituisce una lista di stringhe in ordine alfabetico numerandole. Modificando il parametro start è possibile decidere da che numero iniziare a numerare la lista di parole di default è impostato su 1.
+Return a list of string in alphabetical order numbering them. If you modify the start parameter it's possible modify from what number start the counter.
 
 ```from catalogpy.catalog import ordination
 
@@ -41,13 +46,14 @@ print(ordination(4, words, min=4, max=6)
 
 -----
 
-```unique_words(words, min, max, text)```
-Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengono filtrate e poi ordinate.
+```unique_words(ord, words, min, max, text)```
+Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengono filtrate e se vuoi usando il parametro ord puoi decidere se ordinare in ordine alfabetico le parole di default il parametro è su False.
+Return an list of unique words remove al the duplicates. The words are filtered and if you want with the ord parameter you can order in alphabetical order the words, the parameter is False as default.
 
 ```from catalogpy.catalog import unique_words
 
 words = ["gatto", "cane", "gatto", "topo", "cane"]
-unique_words(words)
+unique_words(True, words)
 # Output:
 # ['cane', 'gatto', 'topo']
 ```
