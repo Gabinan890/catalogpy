@@ -7,6 +7,7 @@
 
 #Versione italiana
 catalogpy è una libreria che ti permette di ordinare le tue stringhe, e mantenere il tuo codice più pulito!
+
 #English version
 catalogpy is a library that allow to you to order your string, and mantain clean your code!
 
@@ -17,15 +18,19 @@ How to dowload it? It's simple just use **pip**!
 pip install catalogpy
 ```
 #Italiano
+
 Funzionalità e Utilizzo
 Ogni funzione è progettata per eseguire un'operazione specifica. Puoi importare e usare solo le funzioni di cui hai bisogno.
+
 #English
+
 Funtionalities and utility
 Each function is designed to execute an a specific operation. You can import and use only the function that you need.
 
 ```elencation(words, min, max, text)```
 #Italiano
 Ordina le parole in ordine alfabetico e le restituisce in una stringa, filtrate per lunghezza.
+
 #English
 Order the word in alphabetical order and return them into a string, you can also filter the word by lenght.
 
@@ -42,6 +47,7 @@ elencation(words, min=4, max=6)
 ```ordination(start, words, min, max, text)```
 #Italiano
 Restituisce una lista di stringhe in ordine alfabetico numerandole. Modificando il parametro start è possibile decidere da che numero iniziare a numerare la lista di parole di default è impostato su 1.
+
 #English
 Return a list of string in alphabetical order numbering them. If you modify the start parameter it's possible modify from what number start the counter that is 1 in default.
 
@@ -58,6 +64,7 @@ print(ordination(4, words, min=4, max=6)
 ```unique_words(ord, words, min, max, text)```
 #Italiano
 Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengono filtrate e se vuoi usando il parametro ord puoi decidere se ordinare in ordine alfabetico le parole di default il parametro è su False.
+
 #English
 Return an list of unique words remove al the duplicates. The words are filtered and if you want with the ord parameter you can order in alphabetical order the words, the parameter is False as default.
 
@@ -72,5 +79,6 @@ unique_words(True, words)
 #Licenza/License
 #Italiano
 Questo progetto è distribuito sotto licenza GNU GPL v3. Consulta file LICENSE per dettagli.
+
 #English
 This project is under the GNU GPL v3 license. Read then file LICENSE for more info.
