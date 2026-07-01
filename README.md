@@ -19,7 +19,6 @@ How to dowload it? It's simple just use **pip**!
 pip install catalogpy
 ```
 #Italiano
-
 Funzionalità e Utilizzo
 Ogni funzione è progettata per eseguire un'operazione specifica. Puoi importare e usare solo le funzioni di cui hai bisogno.
 
