@@ -28,6 +28,8 @@ Funtionalities and utility
 Each function is designed to execute an a specific operation. You can import and use only the function that you need.
 
 ```elencation(words, min, max, text)```
+
+
 #Italiano
 Ordina le parole in ordine alfabetico e le restituisce in una stringa, filtrate per lunghezza.
 
@@ -46,6 +48,8 @@ elencation(words, min=4, max=6)
 -----
 
 ```ordination(start, words, min, max, text)```
+
+
 #Italiano
 Restituisce una lista di stringhe in ordine alfabetico numerandole. Modificando il parametro start è possibile decidere da che numero iniziare a numerare la lista di parole di default è impostato su 1.
 
@@ -64,6 +68,8 @@ print(ordination(4, words, min=4, max=6)
 -----
 
 ```unique_words(ord, words, min, max, text)```
+
+
 #Italiano
 Restituisce un elenco di parole uniche, rimuovendo i duplicati. Le parole vengono filtrate e se vuoi usando il parametro ord puoi decidere se ordinare in ordine alfabetico le parole di default il parametro è su False.
 
