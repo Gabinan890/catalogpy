@@ -8,7 +8,7 @@
 # Chose the language
 
 * [Documentazione in italiano](#documentazione-in-italiano)
-* [Documentation in english](#english-documentation)
+* [Documentation in english](#documentation-in-english)
 
 ## Documentazione in italiano
 catalogpy è una libreria che ti permette di ordinare le tue stringhe, e mantenere il tuo codice più pulito!
